@@ -1,3 +1,8 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "types": ["jest", "react-native"],
+    "skipLibCheck": true
+  },
+  "include": ["**/*.ts", "**/*.tsx", "nativewind-env.d.ts"]
 }
